@@ -1,0 +1,13 @@
+.Horizontal-menu {
+    width: 210px;
+    background-color: #fbca8e;
+    padding: 10px;
+    height: 100%;
+}
+
+.Horizontal-menu ul{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
