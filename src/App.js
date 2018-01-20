@@ -15,6 +15,8 @@ class App extends Component {
 
         {/* <AppHeader className="App-header"></AppHeader> */}
 
+        <AppHeader/>
+
         <SideMenu/>
 
         {/* 
@@ -22,7 +24,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         */}
-        
+
       </div>
     );
   }
