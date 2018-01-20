@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
-import logo from './happy-cloud.svg';
+
 import './App.css';
+
+import AppHeader from './components/AppHeader/AppHeader.js';
+
+// Side-menu
+import SideMenu from './components/SideMenu/SideMenu.js';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+
+        {/* <AppHeader className="App-header"></AppHeader> */}
+
+        <SideMenu/>
+
+        {/* 
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        */}
+        
       </div>
     );
   }
