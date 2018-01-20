@@ -3,10 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 import AppHeader from './components/AppHeader/AppHeader.js';
-
-// Side-menu
 import SideMenu from './components/SideMenu/SideMenu.js';
-
+import MainContainer from './components/MainContainer/MainContainer.js';
 
 class App extends Component {
   render() {
@@ -19,11 +17,7 @@ class App extends Component {
 
         <SideMenu/>
 
-        {/* 
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        */}
+        <MainContainer/>
 
       </div>
     );
