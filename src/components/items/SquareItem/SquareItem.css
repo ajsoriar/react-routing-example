@@ -1,10 +1,14 @@
 .Square-item{
     position: relative;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    float: left;
 }
 
 .Square-item .item{
-    width: 210px;
-    height: 210px;
+    width: 100px;
+    height: 100px;
     padding: 5px;
     margin: auto;
     background-color: #866b47;
@@ -17,4 +21,5 @@
     background-color: #f1ebeb;
     color: black;
     position: relative;
+    font-size: 14px;
 }

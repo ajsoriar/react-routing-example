@@ -13,26 +13,23 @@ class App extends Component {
     return (
       <div className="App">
 
-        {/* <AppHeader className="App-header"></AppHeader> */}
-
         <AppHeader/>
 
         <SideMenu/>
 
-        <SquareItem itemText="We try" size="300" />
+        {/* <SquareItem itemText="We try" size="300" /> */}
 
-        <RowItem>
-            <SquareItem itemText="We try 1" size="100" />
-            <SquareItem itemText="We try 2" size="100" />
-            <SquareItem itemText="We try 3" size="100" />
-            <SquareItem itemText="We try 4" size="100" />
-            <SquareItem itemText="We try 5" size="100" />
-        </RowItem>
-
-        <MainContainer>
-          hello!
-          <SquareItem itemText="We try" size="300" />
-        </MainContainer>
+        <MainContainer content={
+            <RowItem content={
+                <span>
+                    <SquareItem itemText="We try 1" size="100" />
+                    <SquareItem itemText="We try 2" size="100" />
+                    <SquareItem itemText="We try 3" size="100" />
+                    <SquareItem itemText="We try 4" size="100" />
+                    <SquareItem itemText="We try 5" size="100" />
+                </span>
+            } />
+        } />
 
       </div>
     );

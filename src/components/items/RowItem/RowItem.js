@@ -1,21 +1,20 @@
 import React, { Component } from "react";
 import './RowItem.css'
+
  
 class RowItem extends Component {
-
-    /*
-    constructor(props) {
-        super(props);
-        this.state = { counter: 1 };
-    }
-    */
 
     render() {
         return (
             <div className="Row-item">
+                { this.props.content }
             </div>
         );
     }
+}
+
+RowItem.defaultProps = {
+    content: null
 }
 
 export default RowItem;
