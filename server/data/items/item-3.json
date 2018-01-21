@@ -1,0 +1,12 @@
+{
+       "id": "3",
+       "name": "item-3",
+       "description": "description of this item here",
+       "url": null,
+       "image": {
+           "url": null,
+           "embeddeDdata": null,
+           "fileName": null
+       }
+
+}

@@ -1,0 +1,24 @@
+{
+       "id": "1",
+       "name": "row-1",
+       "description": "description of this row here",
+       "items": 
+        [
+           {
+               "id": "1",
+               "notes": "item number 1",
+               "file": "item-1.json",
+               "locked": false
+           },{
+               "id": "2",
+               "notes": "item number 2",
+               "file": "item-2.json",
+               "locked": true
+           },{
+               "id": "3",
+               "notes": "item number 3",
+               "file": "item-3.json",
+               "locked": true
+           }
+        ]
+}

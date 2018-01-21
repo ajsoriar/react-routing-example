@@ -22,15 +22,23 @@ var counter int
 
 func main() {
 
-    fmt.Printf("%s\n", "main()" )
+	fmt.Printf("%s\n", "main()" )
+	
+	/*
 	http.HandleFunc("/", hello)
 	http.HandleFunc("/andres", helloAndres )
 	http.HandleFunc("/givemedata", givemedata )
+	*/
+
+	http.HandleFunc("/get-row/{id}", getrow )
+	http.HandleFunc("/get-item/{id}", getitem )
+
 	http.ListenAndServe(":8000", nil)
     fmt.Printf("%s\n", "Server started in http://localhost:8000/" )
     counter++
 }
 
+/*
 func hello(w http.ResponseWriter, r *http.Request) {
 
     fmt.Printf("%s\n", "hello()" )
@@ -65,4 +73,58 @@ func givemedata(w http.ResponseWriter, r *http.Request) {
     io.WriteString(w, string(file))
     counter++
     fmt.Printf( "%d\n",counter )
+}
+
+*/
+
+func getrow(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Printf("%s\n", "getrow()" )
+	
+	/*
+
+    file, e := ioutil.ReadFile("./andres.json")
+    if e != nil {
+        fmt.Printf("File error: %v\n", e)
+        os.Exit(1)
+    }
+
+    // Update the header in order to return "application/json"
+    // Check out this: http://www.alexedwards.net/blog/golang-response-snippets
+
+    w.Header().Set("Server", "A Go Web Server")
+    w.Header().Set("Andres-Header", "Andres header!!!")
+    //w.WriteHeader(200)
+    w.Header().Set("Content-Type", "application/json")
+    io.WriteString(w, string(file))
+    counter++
+	fmt.Printf( "%d\n",counter )
+	*/
+
+}
+
+func getitem(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Printf("%s\n", "getitem()" )
+	
+	/*
+
+    file, e := ioutil.ReadFile("./andres.json")
+    if e != nil {
+        fmt.Printf("File error: %v\n", e)
+        os.Exit(1)
+    }
+
+    // Update the header in order to return "application/json"
+    // Check out this: http://www.alexedwards.net/blog/golang-response-snippets
+
+    w.Header().Set("Server", "A Go Web Server")
+    w.Header().Set("Andres-Header", "Andres header!!!")
+    //w.WriteHeader(200)
+    w.Header().Set("Content-Type", "application/json")
+    io.WriteString(w, string(file))
+    counter++
+	fmt.Printf( "%d\n",counter )
+	*/
+	
 }
