@@ -1,13 +1,32 @@
 .Horizontal-menu {
-    width: 210px;
-    background-color: #fbca8e;
-    padding: 10px;
-    height: 100%;
+    background-color: #ff90f6;
+    padding: 0;
+    width: 100%;
+    color: white;
+    height: 40px;
+    position: relative;
+    margin-bottom: 0;
+    display: block;
 }
 
 .Horizontal-menu ul{
     list-style: none;
-    text-align: left;
     padding: 0;
     margin: 0;
+}
+
+.Horizontal-menu ul li{
+    list-style: none;
+    text-align: center;
+    padding: 5px 10px;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+    border: 1px solid green;
+    background-color: cyan;
+}
+
+.Horizontal-menu ul li:hover{
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(255, 234, 0);
 }
