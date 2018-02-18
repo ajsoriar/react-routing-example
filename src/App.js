@@ -25,7 +25,7 @@ class App extends Component {
         <MainContainer content={
           <Router>
           <div>
-          <Route exact path="/" component={SectionHome}/>
+          <Route exact path={["/","/home/*"]} component={SectionHome}/>
           <Route path="/stuff" component={SectionStuff}/>
           <Route path="/about" component={SectionAbout}/>
           </div>
