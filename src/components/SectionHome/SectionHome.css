@@ -1,0 +1,10 @@
+.SectionHome{
+    _width: calc( 100% - 250px );
+    _height: calc( 100% - 170px );
+    padding: 10px;
+    right: 0;
+    _bottom: 0;
+    _background-color: #9cee9c;
+    _position: absolute;
+    border: 1px solid red;
+}

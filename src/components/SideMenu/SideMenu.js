@@ -6,7 +6,7 @@ class SideMenu extends Component {
   render() {
     return (
         <div className="Side-menu">
-          <h1>Side Menu</h1>
+          <h3>Side Menu</h3>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/stuff">Stuff</a></li>
